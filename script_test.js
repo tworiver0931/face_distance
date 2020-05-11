@@ -45,6 +45,13 @@ async function start() {
 	const resizedDetection2 = faceapi.resizeResults(detection2, displaySize2)
     const dist = faceapi.euclideanDistance(resizedDetection1.descriptor, resizedDetection2.descriptor)
 	
+	const box1 = resizedDetection1.detection.box
+    const drawBox1 = new faceapi.draw.DrawBox(box1)
+    drawBox1.draw(canvas1)
+	const box2 = resizedDetection2.detection.box
+    const drawBox2 = new faceapi.draw.DrawBox(box2)
+    drawBox2.draw(canvas2)
+	
 	document.body.append(dist)
   })
 }
