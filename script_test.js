@@ -1,0 +1,50 @@
+const imageUpload1 = document.getElementById('imageUpload1')
+const imageUpload2 = document.getElementById('imageUpload2')
+
+Promise.all([
+  faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
+  faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
+  faceapi.nets.ssdMobilenetv1.loadFromUri('/models')
+]).then(start)
+
+async function start() {
+  const container1 = document.createElement('div')
+  const container2 = document.createElement('div')
+  container1.style.position = 'relative'
+  container2.style.position = 'relative'
+  document.body.append(container1)
+  document.body.append(container2)
+	
+  let image1
+  let image2
+  let canvas1
+  let canvas2
+  
+  document.body.append('Loaded')
+	
+  imageUpload2.addEventListener('change', async () => {
+    if (image1) image1.remove()
+	if(image2) image2.remove()
+    if (canvas1) canvas1.remove()
+	if (canvas2) canvas2.remove()
+    image1 = await faceapi.bufferToImage(imageUpload1.files[0])
+	image2 = await faceapi.bufferToImage(imageUpload2.files[0])
+    container1.append(image1)
+	container2.append(image2)
+    canvas1 = faceapi.createCanvasFromMedia(image1)
+	canvas2 = faceapi.createCanvasFromMedia(image2)
+    container1.append(canvas1)
+	container2.append(canvas2)
+    const displaySize1 = { width: image1.width, height: image1.height }
+	const displaySize2 = { width: image2.width, height: image2.height }
+    faceapi.matchDimensions(canvas1, displaySize1)
+	faceapi.matchDimensions(canvas2, displaySize2)
+    const detection1 = await faceapi.detectSingleFace(image1).withFaceLandmarks().withFaceDescriptor()
+	const detection2 = await faceapi.detectSingleFace(image2).withFaceLandmarks().withFaceDescriptor()
+    const resizedDetection1 = faceapi.resizeResults(detection1, displaySize1)
+	const resizedDetection2 = faceapi.resizeResults(detection2, displaySize2)
+    const dist = faceapi.euclideanDistance(resizedDetection1.descriptor, resizedDetection2.descriptor)
+	
+	document.body.append(dist)
+  })
+}
