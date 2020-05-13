@@ -1,6 +1,6 @@
-const imageUpload1 = document.getElementById('imageUpload1')
-const imageUpload2 = document.getElementById('imageUpload2')
-
+const imageUpload1 = document.getElementByClass('file-upload-image1')
+const imageUpload2 = document.getElementByClass('file-upload-image2')
+  
 Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
   faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
@@ -20,7 +20,7 @@ async function start() {
   let canvas1
   let canvas2
   
-  document.body.append('Loaded')
+  
 	
   imageUpload2.addEventListener('change', async () => {
     if (image1) image1.remove()
