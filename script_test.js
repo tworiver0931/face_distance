@@ -8,8 +8,8 @@ Promise.all([
 ]).then(start)
 
 async function start() {
-  const container1 = document.createElement('div')
-  const container2 = document.createElement('div')
+  const container1 = document.getElementById('image-upload-wrap1')
+  const container2 = document.getElementById('image-upload-wrap2')
   container1.style.position = 'relative'
   container2.style.position = 'relative'
   document.body.append(container1)
