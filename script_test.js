@@ -1,6 +1,7 @@
 const imageUpload1 = document.getElementById('imageUpload1')
 const imageUpload2 = document.getElementById('imageUpload2')
-  
+  const container1 = document.createElement('div')
+  const container2 = document.createElement('div')
 Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
   faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
@@ -8,8 +9,7 @@ Promise.all([
 ]).then(start)
 
 async function start() {
-  const container1 = document.createElement('div')
-  const container2 = document.createElement('div')
+  
   container1.style.position = 'relative'
   container2.style.position = 'relative'
   document.body.append(container1)
