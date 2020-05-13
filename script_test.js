@@ -1,9 +1,5 @@
 const imageUpload1 = document.getElementById('face-image1')
 const imageUpload2 = document.getElementById('face-image2')
-
-const file_upload_content1=document.getElementById('file-upload-content1')
-const file_upload_content2=document.getElementById('file-upload-content2')
-
   const container1 = document.createElement('div')
   const container2 = document.createElement('div')
   
@@ -17,8 +13,8 @@ async function start() {
   
   container1.style.position = 'relative'
   container2.style.position = 'relative'
-  document.file_upload_content1.append(container1)
-  document.file_upload_content1.append(container2)
+  document.body.append(container1)
+  document.body.append(container2)
 	
   let image1
   let image2
