@@ -21,8 +21,9 @@ async function start() {
   let canvas2
   
   document.body.append('Loaded1')
+}
 	
-  imageUpload2.addEventListener('change', async () => {
+async function go(){
 	document.body.append('Loaded2')
     if (image1) image1.remove()
 	if(image2) image2.remove()
@@ -54,5 +55,5 @@ async function start() {
     drawBox2.draw(canvas2)
 	
 	document.body.append(dist)
-  })
-}
+  }
+
