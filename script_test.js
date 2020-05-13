@@ -20,7 +20,7 @@ async function start() {
   let canvas1
   let canvas2
   
-  
+  document.body.append('Loaded')
 	
   imageUpload2.addEventListener('change', async () => {
     if (image1) image1.remove()
