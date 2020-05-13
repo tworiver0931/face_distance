@@ -1,7 +1,12 @@
 const imageUpload1 = document.getElementById('face-image1')
 const imageUpload2 = document.getElementById('face-image2')
+
+const file_upload_content1=document.getElementById('file-upload-content1')
+const file_upload_content2=document.getElementById('file-upload-content2')
+
   const container1 = document.createElement('div')
   const container2 = document.createElement('div')
+  
 Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
   faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
@@ -12,8 +17,8 @@ async function start() {
   
   container1.style.position = 'relative'
   container2.style.position = 'relative'
-  document.body.append(container1)
-  document.body.append(container2)
+  document.file_upload_content1.append(container1)
+  document.file_upload_content1.append(container2)
 	
   let image1
   let image2
@@ -31,8 +36,8 @@ async function go(){
 	if (canvas2) canvas2.remove()*/
     /*image1 = await faceapi.bufferToImage(imageUpload1.files[0])
 	image2 = await faceapi.bufferToImage(imageUpload2.files[0])*/
-	image1=imageUpload1
-	image2=imageUpload2
+	image1= imageUpload1
+	image2= imageUpload2
     container1.append(image1)
 	container2.append(image2)
     canvas1 = faceapi.createCanvasFromMedia(image1)
