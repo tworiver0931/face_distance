@@ -1,5 +1,5 @@
-const imageUpload1 = document.getElementById('face-image1')
-const imageUpload2 = document.getElementById('face-image2')
+const imageUpload1 = document.getElementById('imageUpload1')
+const imageUpload2 = document.getElementById('imageUpload2')
   
 Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
@@ -29,8 +29,8 @@ async function go(){
 	if(image2) image2.remove()
     if (canvas1) canvas1.remove()
 	if (canvas2) canvas2.remove()*/
-    image1 = await faceapi.bufferToImage(imageUpload1)
-	image2 = await faceapi.bufferToImage(imageUpload2)
+    image1 = await faceapi.bufferToImage(imageUpload1.files[0])
+	image2 = await faceapi.bufferToImage(imageUpload2.files[0])
     container1.append(image1)
 	container2.append(image2)
     canvas1 = faceapi.createCanvasFromMedia(image1)
