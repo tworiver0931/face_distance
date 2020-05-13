@@ -1,5 +1,5 @@
-const imageUpload1 = document.getElementById('imageUpload1')
-const imageUpload2 = document.getElementById('imageUpload2')
+const imageUpload1 = document.getElementById('face-image1')
+const imageUpload2 = document.getElementById('face-image2')
   
 Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
