@@ -1,7 +1,10 @@
 const image1 = document.getElementById('face-image1')
 const image2 = document.getElementById('face-image2')
-  const container1 = document.createElement('div')
-  const container2 = document.createElement('div')
+const container1 = document.createElement('div')
+const container2 = document.createElement('div')
+
+document.getElementById('file-upload-content1').appendchild(container1)
+document.getElementById('file-upload-content2').appendchild(container2)
   
 Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
