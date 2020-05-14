@@ -9,6 +9,7 @@ body {
 	border-radius: 10px;
 	border: solid 2px #f6f7fa;
 	background-color: #f6f7fa;
+	display: flex;
 }
 
 .file-upload-btn {
@@ -69,21 +70,21 @@ body {
 }
 
 .image-upload-wrap1 {
-	width: 60%;
+	width: 40%;
 	margin: 0 auto;
 	position: relative;
 	object-fit: contain;
-	border-radius: 10px;
-	border: solid 4px #35465d;
+	border-radius: 5px;
+	border: solid 2px #424242;
 	background-color: #ffffff;
 }
 .image-upload-wrap2 {
-	width: 60%;
+	width: 40%;
 	margin: 0 auto;
 	position: relative;
 	object-fit: contain;
-	border-radius: 10px;
-	border: solid 4px #35465d;
+	border-radius: 5px;
+	border: solid 2px #424242;
 	background-color: #ffffff;
 }
 
@@ -156,26 +157,18 @@ body {
 }
 
 .nav-distance {
-	padding: 2.1% 7.7%;
+	padding: 0.5% 15%;
+	border-bottom: 2px solid #424242;
 }
 
 .navbar-light .navbar-brand .bg-light {
 	font-family: NanumSquareR;
 	line-height: 1.68;
 	text-align: left;
-	color: #35465d;
 }
 
-.bg-light {
-	background-color: #2e2e2e !important; /*네비게이션바 색*/
-}
 
-.navbar-light .navbar-toggler {
-	border-color: #ffffff; /*메뉴 테두리 색*/
-}
 
-.section {
-	margin-top: 60px;
 }
 
 .title {
