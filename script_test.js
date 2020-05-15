@@ -1,24 +1,32 @@
-
+const image1 = document.getElementById('face-image1')
+const image2 = document.getElementById('face-image2')
+const container1 = document.createElement('div')
+const container2 = document.createElement('div')
 
   
 Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
   faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
   faceapi.nets.ssdMobilenetv1.loadFromUri('/models')
-]).then(document.body.append('Loaded1'))
+]).then(start)
 
 async function start() {
-  const image1 = document.getElementById('face-image1')
-const image2 = document.getElementById('face-image2')
-const container1 = document.createElement('div')
-const container2 = document.createElement('div')
-
+  
   container1.style.position = 'relative'
   container2.style.position = 'relative'
   document.body.append(container1)
   document.body.append(container2)
+	
+  let image1
+  let image2
+  let canvas1
+  let canvas2
   
-  document.body.append('Loaded2')
+  document.body.append('Loaded1')
+}
+	
+async function go(){
+	document.body.append('Loaded2')
     /*if (image1) image1.remove()
 	if(image2) image2.remove()
     if (canvas1) canvas1.remove()
@@ -54,4 +62,4 @@ const container2 = document.createElement('div')
 	
 	document.body.append(dist)
 }
-	
+
