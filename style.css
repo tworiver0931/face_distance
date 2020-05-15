@@ -70,7 +70,8 @@ body {
 }
 
 .image-upload-wrap1 {
-	width: 40%;
+	width: 125px;
+	height: 125px;
 	margin: 0 auto;
 	position: relative;
 	object-fit: contain;
@@ -79,7 +80,8 @@ body {
 	background-color: #ffffff;
 }
 .image-upload-wrap2 {
-	width: 40%;
+	width: 125px;
+	height: 125px;
 	margin: 0 auto;
 	position: relative;
 	object-fit: contain;
