@@ -42,10 +42,12 @@ body {
 .file-upload-content1 {
 	display: none;
 	text-align: center;
+	margin: 0 auto;
 }
 .file-upload-content2 {
 	display: none;
 	text-align: center;
+	margin: 0 auto;
 }
 
 .file-upload-input1 {
