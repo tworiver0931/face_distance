@@ -17,15 +17,16 @@ async function start() {
   document.body.append(container1)
   document.body.append(container2)
 	
-  let image1
-  let image2
-  let canvas1
-  let canvas2
+  
   
   document.body.append('Loaded1')
 }
 	
 async function go(){
+  let image1
+  let image2
+  let canvas1
+  let canvas2
 	document.body.append('Loaded2')
     if (image1) image1.remove()
 	if(image2) image2.remove()
