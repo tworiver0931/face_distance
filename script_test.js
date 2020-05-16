@@ -38,8 +38,8 @@ async function go(){
 	
     container1.append(image1)
 	container2.append(image2)
-    canvas1 = faceapi.createCanvasFromMedia(image1)
-	canvas2 = faceapi.createCanvasFromMedia(image2)
+    const canvas1 = await faceapi.createCanvasFromMedia(image1)
+	const canvas2 = await faceapi.createCanvasFromMedia(image2)
     container1.append(canvas1)
 	container2.append(canvas2)
     const displaySize1 = { width: image1.width, height: image1.height }
