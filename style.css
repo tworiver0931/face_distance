@@ -3,6 +3,12 @@ body {
 	background-color: #ffffff;
 }
 
+canvas {
+			position: absolute;
+			top: 23px;
+			left: 62px;
+		}
+
 .file-upload {
 	margin: 0 auto;
 	padding: 13% 0;
@@ -79,7 +85,7 @@ body {
 	object-fit: contain;
 	border-radius: 5px;
 }
-.image-upload-wrap1:active{background-color: #A9D0F5}
+.image-upload-wrap1:active{background-color: #A9D0F5; transition: all 0.3s ease;}
 	
 .image-upload-wrap2 {
 	width: 100px;
@@ -89,7 +95,7 @@ body {
 	object-fit: contain;
 	border-radius: 5px;
 }
-.image-upload-wrap2:active{background-color: #A9D0F5}
+.image-upload-wrap2:active{background-color: #A9D0F5; transition: all 0.3s ease;}
 
 .image-dropping,
 .image-upload-wrap:hover {
@@ -135,28 +141,16 @@ body {
 .remove-image {
 	width: 200px;
 	margin: 0;
-	color: #fff;
-	background: #cd4535;
-	border: none;
-	padding: 10px;
+	border: solid 0.5px #BDBDBD;
+	padding: 7px;
 	border-radius: 4px;
-	border-bottom: 4px solid #b02818;
-	transition: all 0.2s ease;
-	outline: none;
-	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 52;
 }
 
-.remove-image:hover {
-	background: #c13b2a;
-	color: #ffffff;
-	transition: all 0.2s ease;
-	cursor: pointer;
-}
 
 .remove-image:active {
-	border: 0;
-	transition: all 0.2s ease;
+	background-color: #A9D0F5;
+	transition: all 0.3s ease;
 }
 
 .nav-distance {

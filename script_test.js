@@ -27,12 +27,10 @@ async function start() {
 	
 async function go(){
 	document.body.append('Loaded2')
-    /*if (image1) image1.remove()
+    if (image1) image1.remove()
 	if(image2) image2.remove()
     if (canvas1) canvas1.remove()
-	if (canvas2) canvas2.remove()*/
-    /*image1 = await faceapi.bufferToImage(imageUpload1.files[0])
-	image2 = await faceapi.bufferToImage(imageUpload2.files[0])*/
+	if (canvas2) canvas2.remove()
 	
 	document.getElementsByClassName('file-upload-content1')[0].appendChild(container1)
 	document.getElementsByClassName('file-upload-content2')[0].appendChild(container2)	
