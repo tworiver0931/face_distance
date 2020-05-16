@@ -17,21 +17,21 @@ async function start() {
   document.body.append(container1)
   document.body.append(container2)
 	
-  
+  let image1
+  let image2
+  let canvas1
+  let canvas2
   
   document.body.append('Loaded1')
 }
 	
 async function go(){
-  let image1
-  let image2
-  let canvas1
-  let canvas2
+  
 	document.body.append('Loaded2')
-    if (image1) image1.remove()
+    /*if (image1) image1.remove()
 	if(image2) image2.remove()
     if (canvas1) canvas1.remove()
-	if (canvas2) canvas2.remove()
+	if (canvas2) canvas2.remove()*/
 	
 	document.getElementsByClassName('file-upload-content1')[0].appendChild(container1)
 	document.getElementsByClassName('file-upload-content2')[0].appendChild(container2)	
