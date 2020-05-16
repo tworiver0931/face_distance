@@ -72,25 +72,24 @@ body {
 }
 
 .image-upload-wrap1 {
-	width: 125px;
-	height: 125px;
+	width: 100px;
+	height: 100px;
 	margin: 0 auto;
 	position: relative;
 	object-fit: contain;
 	border-radius: 5px;
-	border: solid 2px #424242;
-	background-color: #ffffff;
 }
+.image-upload-wrap1:active{background-color: #A9D0F5}
+	
 .image-upload-wrap2 {
-	width: 125px;
-	height: 125px;
+	width: 100px;
+	height: 100px;
 	margin: 0 auto;
 	position: relative;
 	object-fit: contain;
 	border-radius: 5px;
-	border: solid 2px #424242;
-	background-color: #ffffff;
 }
+.image-upload-wrap2:active{background-color: #A9D0F5}
 
 .image-dropping,
 .image-upload-wrap:hover {
