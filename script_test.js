@@ -73,7 +73,7 @@ async function go() {
 	const landmarks2 = faceapi.resizeResults(detectionsWithLandmarks2, displaySize2);
 	// draw the landmarks into the canvas
 	faceapi.draw.drawFaceLandmarks(canvas1, landmarks1);
-	faceapi.draw.drawFaceLandmarks(canvas1, landmarks2);
+	faceapi.draw.drawFaceLandmarks(canvas2, landmarks2);
 
 	document.body.append(dist);
 }
