@@ -5,8 +5,8 @@ body {
 
 canvas {
 			position: absolute;
-			top: 23px;
-			left: 36px;
+			
+			left: 0px;
 		}
 
 .file-upload {
@@ -47,12 +47,10 @@ canvas {
 
 .file-upload-content1 {
 	display: none;
-	text-align: center;
 	margin: 0 auto;
 }
 .file-upload-content2 {
 	display: none;
-	text-align: center;
 	margin: 0 auto;
 }
 
@@ -104,7 +102,6 @@ canvas {
 }
 
 .image-title-wrap {
-	padding: 0 15px 15px 15px;
 	color: #222;
 }
 
