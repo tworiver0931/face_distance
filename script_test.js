@@ -5,6 +5,7 @@ const container2 = document.createElement('div');
 
 let canvas1;
 let canvas2;
+
 Promise.all([
 	faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
 	faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
