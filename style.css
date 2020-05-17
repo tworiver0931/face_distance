@@ -190,6 +190,7 @@ canvas {
 	color: #35465d;
 }
 
+
 .subtitle {
 	font-family: NanumSquareR;
 	line-height: 1.53;
@@ -197,40 +198,33 @@ canvas {
 	color: #35465d;
 }
 
-body {margin: 10px}
-.where {
-  display: block;
-  margin: 25px 15px;
-  font-size: 11px;
-  color: #000;
-  text-decoration: none;
-  font-family: verdana;
-  font-style: italic;
-} 
-.filebox {display:inline-block; margin-right: 10px;}
-
-
-.filebox label {
-  display: inline-block;
-  padding: .5em .75em;
-  color: #999;
-  font-size: inherit;
-  line-height: normal;
-  vertical-align: middle;
-  background-color: #fdfdfd;
-  cursor: pointer;
-  border: 1px solid #ebebeb;
-  border-bottom-color: #e2e2e2;
-  border-radius: .25em;
+.filebox {
+	display: inline-block;
+	margin-right: 10px;
 }
 
-.filebox input[type="file"] {  /* 파일 필드 숨기기 */
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip:rect(0,0,0,0);
-  border: 0;
+.filebox label {
+	display: inline-block;
+	padding: 0.5em 0.75em;
+	color: #999;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #fdfdfd;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radius: 0.25em;
+}
+
+.filebox input[type='file'] {
+	/* 파일 필드 숨기기 */
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
 }
