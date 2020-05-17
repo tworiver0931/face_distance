@@ -65,6 +65,9 @@ canvas {
 	outline: none;
 	opacity: 0;
 	cursor: pointer;
+	left: 50%;
+	top: 50%;
+    transform: translate(-50%, -50%);
 }
 .file-upload-input2 {
 	position: absolute;
@@ -75,6 +78,9 @@ canvas {
 	outline: none;
 	opacity: 0;
 	cursor: pointer;
+	left: 50%;
+	top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .image-upload-wrap1 {
