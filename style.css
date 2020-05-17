@@ -5,11 +5,11 @@ body {
 }
 
 canvas {
-			position: absolute;
-			left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-		}
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
 
 .file-upload {
 	margin: 0 auto;
@@ -67,7 +67,7 @@ canvas {
 	cursor: pointer;
 	left: 50%;
 	top: 50%;
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 .file-upload-input2 {
 	position: absolute;
@@ -80,7 +80,7 @@ canvas {
 	cursor: pointer;
 	left: 50%;
 	top: 50%;
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .image-upload-wrap1 {
@@ -91,8 +91,11 @@ canvas {
 	object-fit: contain;
 	border-radius: 5px;
 }
-.image-upload-wrap1:active{background-color: #A9D0F5; transition: all 0.3s ease;}
-	
+.image-upload-wrap1:active {
+	background-color: #a9d0f5;
+	transition: all 0.3s ease;
+}
+
 .image-upload-wrap2 {
 	width: 100px;
 	height: 100px;
@@ -101,7 +104,10 @@ canvas {
 	object-fit: contain;
 	border-radius: 5px;
 }
-.image-upload-wrap2:active{background-color: #A9D0F5; transition: all 0.3s ease;}
+.image-upload-wrap2:active {
+	background-color: #a9d0f5;
+	transition: all 0.3s ease;
+}
 
 .image-dropping,
 .image-upload-wrap:hover {
@@ -144,17 +150,25 @@ canvas {
 }
 
 .remove-image {
-	width: 200px;
+	/*width: 200px;
 	margin: 0;
-	border: solid 0.5px #BDBDBD;
+	border: solid 0.5px #bdbdbd;
 	padding: 7px;
 	border-radius: 4px;
-	font-weight: 52;
+	font-weight: 52;*/
+
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
 }
 
-
 .remove-image:active {
-	background-color: #A9D0F5;
+	background-color: #a9d0f5;
 	transition: all 0.3s ease;
 }
 
@@ -167,10 +181,6 @@ canvas {
 	font-family: NanumSquareR;
 	line-height: 1.68;
 	text-align: left;
-}
-
-
-
 }
 
 .title {
@@ -187,12 +197,40 @@ canvas {
 	color: #35465d;
 }
 
+body {margin: 10px}
+.where {
+  display: block;
+  margin: 25px 15px;
+  font-size: 11px;
+  color: #000;
+  text-decoration: none;
+  font-family: verdana;
+  font-style: italic;
+} 
+.filebox {display:inline-block; margin-right: 10px;}
 
 
+.filebox label {
+  display: inline-block;
+  padding: .5em .75em;
+  color: #999;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: .25em;
+}
 
-
-
-
-
-
-
+.filebox input[type="file"] {  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
