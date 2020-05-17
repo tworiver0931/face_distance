@@ -67,12 +67,13 @@ async function go() {
 
 	/* Display face landmarks */
 	const detectionsWithLandmarks1 = await faceapi.detectSingleFace(image1).withFaceLandmarks();
+	const detectionsWithLandmarks2 = await faceapi.detectSingleFace(image2).withFaceLandmarks();
 	// resize the detected boxes and landmarks in case your displayed image has a different size than the original
 	const landmarks1 = faceapi.resizeResults(detectionsWithLandmarks1, displaySize1);
-	// draw detections into the canvas
-	faceapi.draw.drawDetections(canvas1, landmarks1);
+	const landmarks2 = faceapi.resizeResults(detectionsWithLandmarks2, displaySize2);
 	// draw the landmarks into the canvas
 	faceapi.draw.drawFaceLandmarks(canvas1, landmarks1);
+	faceapi.draw.drawFaceLandmarks(canvas1, landmarks2);
 
 	document.body.append(dist);
 }
