@@ -2,8 +2,7 @@ const image1 = document.getElementById('face-image1');
 const image2 = document.getElementById('face-image2');
 const container1 = document.createElement('div');
 const container2 = document.createElement('div');
-let image1;
-let image2;
+
 let canvas1;
 let canvas2;
 Promise.all([
