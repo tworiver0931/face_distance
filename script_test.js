@@ -30,9 +30,7 @@ async function go() {
     if (canvas1) canvas1.remove()
 	if (canvas2) canvas2.remove()*/
 	
-	$(canvas1).empty();
-	$(canvas2).empty();
-
+	$('canvas').empty();
 	document.getElementsByClassName('file-upload-content1')[0].appendChild(container1);
 	document.getElementsByClassName('file-upload-content2')[0].appendChild(container2);
 
