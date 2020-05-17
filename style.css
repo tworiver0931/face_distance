@@ -129,13 +129,13 @@ canvas {
 	max-height: 200px;
 	max-width: 200px;
 	margin: auto;
-	padding: 20px;
+	/*padding: 20px;*/
 }
 .file-upload-image2 {
 	max-height: 200px;
 	max-width: 200px;
 	margin: auto;
-	padding: 20px;
+	/*padding: 20px;*/
 }
 
 .remove-image {
