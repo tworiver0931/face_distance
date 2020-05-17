@@ -74,6 +74,8 @@
 
 	<script>
 		function readURL1(input) {
+			if (canvas1) canvas1.remove()
+			if (canvas2) canvas2.remove()
 			if (input.files && input.files[0]) {
 				var reader = new FileReader();
 				reader.onload = function(e) {
@@ -92,6 +94,8 @@
 		}
 
 		function readURL2(input) {
+			if (canvas1) canvas1.remove()
+			if (canvas2) canvas2.remove()
 			if (input.files && input.files[0]) {
 				var reader = new FileReader();
 				reader.onload = function(e) {
