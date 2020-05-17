@@ -2,7 +2,10 @@ const image1 = document.getElementById('face-image1');
 const image2 = document.getElementById('face-image2');
 const container1 = document.createElement('div');
 const container2 = document.createElement('div');
-
+let image1;
+let image2;
+let canvas1;
+let canvas2;
 Promise.all([
 	faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
 	faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
@@ -15,10 +18,7 @@ async function start() {
 	document.body.append(container1);
 	document.body.append(container2);
 
-	let image1;
-	let image2;
-	let canvas1;
-	let canvas2;
+	
 
 	document.body.append('Loaded1');
 }
@@ -30,7 +30,10 @@ async function go() {
     if (canvas1) canvas1.remove()
 	if (canvas2) canvas2.remove()*/
 	
-	$('canvas').empty();
+	
+	$(canvas1).empty();
+	$(canvas2).empty();
+	
 	document.getElementsByClassName('file-upload-content1')[0].appendChild(container1);
 	document.getElementsByClassName('file-upload-content2')[0].appendChild(container2);
 
