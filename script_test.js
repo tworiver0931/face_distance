@@ -21,6 +21,7 @@ async function start() {
 	
 
 	document.body.append('Loaded1');
+	loaded;
 }
 
 async function go() {
@@ -74,3 +75,12 @@ async function go() {
 
 	document.body.append(dist);
 }
+
+var loaded = function() {
+  var loader = $("div.loader");
+  var container1 = $("div.image-upload-wrap1");
+  var container2 = $("div.image-upload-wrap2");
+  loader.css("display","none");
+  container1.css("display","block");
+  container2.css("display","block");
+};

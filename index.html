@@ -27,8 +27,11 @@
 	
 
 	<div class=" container file-upload">
+		
+		<div class="loader"></div>
+		
 		<!--업로드 창 1-->
-		<div class="image-upload-wrap1">
+		<div class="image-upload-wrap1" style="display:none">
 			<input class="file-upload-input1" type='file' onchange="readURL1(this);" accept="image/*" id="imageUpload1">
 			<div class="drag-text">
 				<img src="image/uploadbutton.png" class="mt-4 upload" style="width: 50%">
@@ -47,7 +50,7 @@
 		</div>
 
 		<!--업로드 창 2-->
-		<div class="image-upload-wrap2">
+		<div class="image-upload-wrap2" style="display:none">
 			<input class="file-upload-input2" type='file' onchange="readURL2(this);" accept="image/*" id="imageUpload2">
 			<div class="drag-text">
 				<img src="image/uploadbutton.png" class="mt-4 upload" style="width: 50%">
