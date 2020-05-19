@@ -255,6 +255,7 @@ canvas {
 
 .go{
   font-family: "Roboto", sans-serif;
+  margin: 0 auto;
   text-transform: uppercase;
   outline: 0;
   background: #01DF3A;
