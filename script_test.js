@@ -75,11 +75,11 @@ async function go() {
 
 function loaded() {
   var loader = $("div.loader");
-  var image-upload-wrap1 = $("div.image-upload-wrap1");
-  var image-upload-wrap2 = $("div.image-upload-wrap2");
-  var go-button=$(".go");
+  var image_upload_wrap1 = $("div.image-upload-wrap1");
+  var image_upload_wrap2 = $("div.image-upload-wrap2");
+  var go_button=$(".go");
   loader.css("display","none");
-  image-upload-wrap1.css("display","block");
-  image-upload-wrap2.css("display","block");
-  go-button.css("display", "block");
+  image_upload_wrap1.css("display","block");
+  image_upload_wrap2.css("display","block");
+  go_button.css("display", "block");
 };
