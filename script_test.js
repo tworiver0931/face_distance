@@ -3,6 +3,8 @@ const image2 = document.getElementById('face-image2');
 const container1 = document.createElement('div');
 const container2 = document.createElement('div');
 
+let result = document.createElement('div');
+
 let canvas1;
 let canvas2;
 
@@ -69,8 +71,9 @@ async function go() {
 	// draw the landmarks into the canvas
 	faceapi.draw.drawFaceLandmarks(canvas1, landmarks1);
 	faceapi.draw.drawFaceLandmarks(canvas2, landmarks2);
-
-	document.body.append(dist);
+	
+	result.append(dist);
+	document.getElementsByClassName('file-upload')[0].appendChild(result);
 }
 
 function loaded() {
