@@ -235,9 +235,9 @@ canvas {
     width: 70px;
     height: 70px;
     margin: 0 auto;
-    border: 16px solid #f3f3f3;
+    border: 10px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #3498db;
+    border-top: 10px solid #3498db;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 1s linear infinite;
 }
@@ -251,4 +251,21 @@ canvas {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.go{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #01DF3A;
+  border-radius: 5px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+.go:active{
+	background-color: #a9d0f5;
+	transition: all 0.1s ease;
 }

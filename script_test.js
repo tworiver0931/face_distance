@@ -18,9 +18,6 @@ async function start() {
 	document.body.append(container1);
 	document.body.append(container2);
 
-	
-
-	document.body.append('Loaded1');
 	loaded();
 }
 
@@ -78,9 +75,11 @@ async function go() {
 
 function loaded() {
   var loader = $("div.loader");
-  var container1 = $("div.image-upload-wrap1");
-  var container2 = $("div.image-upload-wrap2");
+  var image-upload-wrap1 = $("div.image-upload-wrap1");
+  var image-upload-wrap2 = $("div.image-upload-wrap2");
+  var go-button=$(".go");
   loader.css("display","none");
-  container1.css("display","block");
-  container2.css("display","block");
+  image-upload-wrap1.css("display","block");
+  image-upload-wrap2.css("display","block");
+  go-button.css("display", "block");
 };
