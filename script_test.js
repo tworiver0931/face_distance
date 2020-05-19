@@ -3,7 +3,7 @@ const image2 = document.getElementById('face-image2');
 const container1 = document.createElement('div');
 const container2 = document.createElement('div');
 
-let result = document.createElement('div');
+let result = document.createElement('p');
 
 let canvas1;
 let canvas2;
